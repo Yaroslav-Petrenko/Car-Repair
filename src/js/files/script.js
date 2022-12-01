@@ -8,3 +8,11 @@ const galleryLiveStreams = document.querySelector('.gallery-live-streams__conten
 galleryLiveStreams.addEventListener('click', (e) => {
 		e.target.classList.toggle('active')
 })
+
+const listActive = document.querySelector('.menu__list');
+// const submenuActive = document.querySelector('.menu__list');
+listActive.addEventListener('click', (e) => {
+	console.log(e)
+  e.preventDefault();
+  listActive.classList.toggle('active');
+});
