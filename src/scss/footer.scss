@@ -17,32 +17,21 @@
   // .footer__body
   &__body {
     padding: 163px 0 123px 0;
-    // display: flex;
-    // align-items: flex-end;
     display: grid;
     grid-template: 50px 3fr / 1.48fr 1fr 1fr 1.48fr;
     column-gap: 25px;
-    // column-gap: 124px;
     @media (max-width: $mobile) {
-      // display: flex;
-      // flex-direction: column;
-      // row-gap: 30px;
-      // justify-content: center;
-      // align-items: center;
       grid-template: 50px auto 50px 1fr/ 1fr 1fr;
       row-gap: 30px;
       padding: 163px 0 40px 0;
     }
     @media (max-width: em(550)) {
-      // grid-template: 50px 3fr / 1.48fr 1fr 1fr 1.48fr;
       display: flex;
       flex-direction: column;
     }
   }
   // .footer__social
   &__social {
-    // flex: 0 1 23.03%;
-    // grid-row: 2 / 3;
     grid-column: 1 / 2;
     max-width: 237px;
     @media (max-width: $mobile) {
@@ -59,7 +48,6 @@
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     margin: -15px 0 0 0;
-    // align-self: center;
     @media (max-width: $mobile) {
       grid-row: 3 / 4;
       grid-column: 1 / 2;
@@ -122,15 +110,9 @@
   &__contacts {
     grid-column: 4 / 5;
     display: flex;
-    // flex: 0 1 23.03%;
-    // margin: 0 0 -28px 68px;
     flex-direction: column;
     row-gap: 16px;
     font-weight: 400;
-    // font-size: 14px;
-    // line-height: 20px;
-    // letter-spacing: 0.15px;
-    // color: #4b4b4b;
     padding: 0 0 0 26px;
     @media (max-width: $mobile) {
       grid-column: 2/3;
@@ -142,11 +124,6 @@
     grid-row: 1 / 2;
     grid-column: 4 / 5;
     order: 3;
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 22px;
-    // letter-spacing: 0.15px;
-    // color: #4b4b4b;
     padding: 0 0 12px 0;
     @media (max-width: $mobile) {
       grid-row: 3 / 4;
@@ -225,20 +202,8 @@
     }
   }
 }
-// .links_margin-left-124px {
-//   margin: 0 0 0 124px;
-// }
-// .links_margin-left-37px {
-//   margin: 0 0 0 37px;
-// }
+
 .links {
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 22px;
-  // letter-spacing: 0.15px;
-  // color: #4b4b4b;
-  // flex: 0 1 15.68%;
-  // .links__body
   &__body {
     display: flex;
     flex-direction: column;

@@ -14,36 +14,6 @@
   }
   // .header__body
   .header__body {
-    // 		@media (max-width: $mobile) {
-    // 	position: fixed;
-    // 	overflow: auto;
-    // 	width: 100%;
-    // 	height: 100%;
-    // 	top: 0;
-    // 	left: -100%;
-    // 	transition: left 0.3s ease 0s;
-    // 	background-color: #0c0c0c;
-    // 	@include adaptiveValue("padding-top", 170, 100);
-    // 	padding-bottom: rem(30);
-    // 	padding-right: rem(15);
-    // 	padding-left: rem(15);
-    // 	&::before {
-    // 		content: "";
-    // 		top: -100%;
-    // 		position: fixed;
-    // 		width: 100%;
-    // 		left: 0;
-    // 		transition: top 0.3s ease 0s;
-    // 		background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-    // 		@include adaptiveValue("height", 171, 100);
-    // 	}
-    // 	.menu-open & {
-    // 		left: 0;
-    // 		&::before {
-    // 			top: 0;
-    // 		}
-    // 	}
-    // }
   }
   // .header__contacts
   &__contacts {
@@ -51,7 +21,6 @@
   // .header__list
   &__list {
     @media (max-width: $mobile) {
-      // color: #fff;
       position: fixed;
       overflow: auto;
       display: block;
@@ -61,7 +30,6 @@
       left: -100%;
       transition: left 0.3s ease 0s;
       background-color: #f5f5f5;
-      // overflow: scroll;
       @include adaptiveValue('padding-top', 170, 100);
       padding-bottom: rem(30);
       padding-right: rem(15);
@@ -84,7 +52,6 @@
       .menu-open & {
         left: 0;
         &::before {
-          // background-color: grey;
           top: 0;
         }
       }
@@ -97,13 +64,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // flex-wrap: nowrap;
   }
   // .header__menu
   &__menu {
-    // @media (max-width:$mobile){
-    // 	  margin: -50px 0 0 0;
-    // }
   }
   // .header__icons
   &__icons {
@@ -116,36 +79,9 @@
   }
   // .header__search
   &__search {
-    // display: flex;
-    // height: 100%;
-    // &::after {
-    //   content: '';
-    // 	display: inline-block;
-    //   background: url('../img/icon/icon/icon/action/search_24px.svg') 0 0 / 100% no-repeat;
-    //   // position: relative;
-    // 	// left: 4px;
-    //   width: 18px;
-    //   height: 18px;
-    //   // z-index: 999;
-    // }
   }
   // .header__bucket
   &__bucket {
-    // display: flex;
-    // height: 100%;
-    // position: relative;
-    // &::after {
-    //   content: '';
-    // 	position: absolute;
-    // 	background-color: #c40b0b;
-    // 	border-radius: 50%;
-    //   // position: relative;
-    // 	left: 4px;
-    // 	top: 0;
-    //   width: 16px;
-    //   height: 16px;
-    //   // z-index: 999;
-    // }
   }
 }
 
@@ -179,31 +115,12 @@
     position: absolute;
     background-color: #c40b0b;
     border-radius: 50%;
-    // position: relative;
     left: 10px;
     top: -10px;
     width: 16px;
     height: 16px;
   }
 }
-// .shopping-cart__circle {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   color: #ffffff;
-//   font-size: 10px;
-//   font-weight: 500;
-//   letter-spacing: 0.15px;
-//   line-height: 22px;
-//   position: absolute;
-//   background-color: #c40b0b;
-//   border-radius: 50%;
-//   // position: relative;
-//   left: 10px;
-//   top: -10px;
-//   width: 16px;
-//   height: 16px;
-// }
 
 .contacts {
   @media (max-width: $mobile) {
@@ -215,22 +132,15 @@
     @include adaptiveValue('column-gap', 238, 15, 4, 1380, 800);
   }
   margin: 0 0 28px 0;
-  // flex: 1 1 auto;
-  // max-height: 40px;
   display: flex;
   justify-content: space-between;
-  // width: 100%;
   font-size: 12px;
   color: #ffffff;
-  // @include adaptiveValue('column-gap', 238, 50, 4, 1380, 768);
 
   // .contacts__logo
   &__logo {
     position: relative;
     z-index: 1;
-    // & img {
-    // 	color: #000000;
-    // }
   }
 
   // .contacts__body
@@ -242,16 +152,10 @@
     @media (max-width: $mobile) {
       font-weight: 400;
       justify-content: flex-end;
-      // column-gap: 35px;
-      // position: absolute;
-      // top: 0;
-      // left: 50%;
-      // transform: translate(-15%, 0)
     }
     @media (max-width: em(650)) {
       display: none;
     }
-    // height: 40px;
     display: flex;
     flex: 1 1 auto;
     // тут или gap или  space-between можно использовать разница в адаптиве
@@ -260,22 +164,10 @@
   }
   // .contacts__button
   .contacts__button {
-    // height: 40px;
     @media (max-width: $tablet) {
       display: none;
     }
   }
-  // .contacts_block
-  // &_block2 {
-  // flex: 1 1 auto;
-  // align-self: start;
-  // display: flex;
-  // letter-spacing: 0.15px;
-  // line-height: 20px;
-  // width: 100%;
-  // max-height: 40px;
-  // max-width: 172px;
-  // }
   // .contacts__service
   &__service {
     position: relative;
@@ -296,9 +188,6 @@
   }
   // .contacts__call-us
   &__service_watch {
-    // padding: 0 0 0 45px;
-    // left: 3px;
-    // font-weight: 500;
     &::before {
       background: url('../img/icon/phone_24px.svg') 0 0 / 100% no-repeat;
     }
@@ -307,60 +196,25 @@
 
 .button-appointment {
   background: #c40b0b url(../img/button.svg) right 0/43px 48px no-repeat;
-  // display: inline-block;
-  // max-width: 211px;
-  // min-height: 41px;
   color: #fff;
-  // flex-basis: 211px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //  align-self: start;
-  // display: inline-block;
-  // text-align: center;
   width: 211px;
-  // flex-grow: 1;
-  // flex: 0 1 auto;
-  // column-gap: 29px;
-  // column-gap: 26px;
   padding: 9px 10px 9px 20px;
-  // background: #c40b0b;
   font-weight: 700;
   font-size: 12px;
   line-height: 200%;
-  // display: flex;
-  // align-items: center;
   letter-spacing: 0.15px;
   text-transform: uppercase;
-  // font-style: normal;
-  // transform: matrix(-1, 0, 0, 1, 0, 0);
-
-  /* /Neutral/White */
-
-  // color: #ffffff;
-
-  // border-radius: 2px;
-  // position: relative;
-  // text-align: center;
-  // width: 300px;
   &::after {
     content: '';
     background: url('../img/icon/arrow_forward_24px.svg') 0 0 / 100% no-repeat;
-    // display: inline-block;
-    // margin: 0 0 0 29px;
     width: 12px;
     height: 12px;
-    // position: relative;
-    // top: 0;
-    // right: 50%;
-    // top: 0%;
-    // right: 8px;
-    // transform: translate(50%, 50%);
   }
   // .button-appointment__text
   &__text {
-    // display: inline-block;
-    // flex: 1 1 auto;
   }
   &:hover {
     filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24))
@@ -373,28 +227,16 @@
 }
 
 .menu {
-  // @media (max-width:$mobile){
-  // 	flex-direction: column;
-
-  // }
-  // padding-bottom: 15px;
-  // height: 100%;
-  // .menu__items
   &__items {
     @media (max-width: $mobile) {
       width: 100%;
       height: 100%;
       flex-direction: column;
       font-size: 35px;
-      // justify-content: center;
       align-items: center;
       row-gap: 15px;
     }
     display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // Style for "Services"
-    // Fill style: Vector
     color: #02133c;
     font-size: 14px;
     font-weight: 700;
@@ -423,16 +265,8 @@
         visibility: visible;
         opacity: 1;
         top: 20px;
-        // display: block;
-
         transition: all 0.3s ease 0s;
       }
-      // visibility: visible;
-      // opacity: 1;
-      // top: 20px;
-      // // display: block;
-
-      // transition: all 0.3s ease 0s;
     }
     // @media (max-width: $mobile) {
     .submenu__arrow-button.rotate {
@@ -445,13 +279,6 @@
         transition: all 0.3s ease 0s;
       }
     }
-
-    // }
-
-    // .touch .submenu__arrow-button {
-    //   transform: rotate(180deg);
-    //   transition: all 0.3s ease 0s;
-    // }
   }
   // .menu__link
   &__link {
@@ -459,18 +286,7 @@
   }
   &__link_arrow {
     display: flex;
-    // justify-content: center;
     align-items: center;
-    // &::after {
-    //   content: '';
-    //   background: url('../img/icon/icon/navigation/expand_more_24px.svg') 0 0 /100%
-    //     no-repeat;
-    //   position: relative;
-    //   left: 4px;
-    //   width: 8px;
-    //   height: 6px;
-    //   // z-index: 999;
-    // }
   }
   // .menu__submenu
   &__submenu {
@@ -491,42 +307,25 @@
     transition: all 0.3s ease 0s;
   }
 }
-// .rotate {
-//   transform: rotate(360deg);
-//   transition: all 0.3s ease 0s;
-// }
 .submenu {
   pointer-events: none;
   pointer-events: all;
-  // display: block;
   position: absolute;
   width: max-content;
-  // position: relative;
   font-weight: 700;
   font-size: 14px;
   line-height: 163%;
   padding: 10px 0 10px 0;
-  // width: 200px;
   top: 55px;
   left: 0;
   visibility: hidden;
   opacity: 0;
-  // display: none;
-  // плавное скрытие меню
-  //  transition: all 0.3s ease 0s;
   filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.54))
-    drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
+  drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
   letter-spacing: 0.15px;
   color: #02133c;
   // .submenu__list
   &__list {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-start;
-    // width: max-content;
     background: #fff;
     &::before {
       content: '';
@@ -543,15 +342,10 @@
   // .submenu__item
   &__item {
     padding: 8px 25px;
-    // cursor: pointer;
-    // display: block;
     text-align: left;
     &:hover {
       font-weight: 900;
       text-decoration: underline;
-      // 	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.54))
-      // drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
-      // display: flex;
       transform: translate(-1px, 0px);
       box-shadow: 7px 9px 14px -3px rgba(0, 0, 0, 0.2),
         11px -10px 14px -3px rgba(0, 0, 0, 0.2);
@@ -560,53 +354,17 @@
   // .submenu__link
   &__link {
     cursor: pointer;
-    // display: block;
   }
 }
-// .rotate {
-//   transform: rotate(0deg);
-//   transition: all 0.3s ease 0s;
-// }
 .touch .active .submenu {
   position: relative;
-  // display: none;
-  // transform: translate(0, 0);
 }
 .menu-open .submenu {
   filter: none;
-  // position: relative;
-  // visibility: hidden;
-  // opacity: 0;
-  // transform: translate(0, 0);
-  // background-color: #f5f5f5;
   font-size: 0px;
   top: 0;
-	// padding: 0;
-  // padding: 10px 0 20px 0;
-  // transition: all 0.3s ease 0s;
-  // position: relative;
-  // display: none;
-  // visibility: hidden;
-  // opacity: 0;
-  // display: none;
-  // transform: translate(0, -50%);
-  // transform: scale(1%);
   transition: all 0.3s ease 0s;
 }
-// @keyframes open {
-//   0% {
-//    transform: translate(0, -50%);
-//     // visibility: hidden;
-//     // opacity: 0;
-//     // display: none;
-//   }
-//   100% {
-//     transform: translate(0, 0);
-//     visibility: visible;
-//     opacity: 1;
-//     display: block;
-//   }
-// }
 .menu-open .menu__item .active.submenu {
   filter: none;
   position: relative;
@@ -616,16 +374,7 @@
   background-color: #f5f5f5;
   font-size: 30px;
   top: 0;
-  // left: 70px;
-  // padding: 10px 0 0 0;
-  // font-weight: 700;
-  // display: block;
-  //   visibility: visible;
-  // opacity: 1;
   transition: all 0.3s ease 0s;
-  // transform: translate(0, 0);
-  // animation: open 0.3s ease 0;
-  // animation-fill-mode: forwards;
 }
 .menu-open .menu__item {
   display: block;
@@ -656,39 +405,17 @@
     left: -267px;
     opacity: 0;
     visibility: hidden;
-    // float: left;
     color: #63717f;
     padding-left: 45px;
     filter: drop-shadow(0px 8px 5px rgba(38, 38, 38, 0.54))
       drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
     transition: all 0.3s ease 0s;
-    // transform-origin: right top;
-    // transform: scaleX(0);
-    // animation: show 0.55s;
-    // animation-duration: 0.55s;
-    // animation-direction: reverse;
   }
   &__button:hover &__input {
     opacity: 1;
     visibility: visible;
-    // width: 300px;
-    //  transform: scaleX(1);
     transition: all 0.3s ease 0s;
-    // transform-origin: right top;
-    // animation: show 0.55s;
-    // animation-duration: 0.55s;
-    // animation-direction: alternate;
-    // animation-fill-mode: forwards;
   }
-
-  // @keyframes show {
-  //   0% {
-  //     width: 30px;
-  //   }
-  //   100% {
-  //     width: 300px;
-  //   }
-  // }
 }
 
 /*=============================================================================
@@ -700,12 +427,8 @@
 .icon-menu {
   display: none;
   @media (max-width: $mobile) {
-    // flex: 0 0 40px;
-    // height: 22.5px;
     display: block;
     position: relative;
-    // right: 0;
-    // top: 0;
     width: rem(40);
     height: rem(22.5);
     z-index: 5;
